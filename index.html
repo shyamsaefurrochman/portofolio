@@ -1,117 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shyam Saefurrochman | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyam Saefurrochman - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="font-sans text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-indigo-600 text-white py-10">
-    <div class="container mx-auto text-center">
-      <img src="assets/profile.jpg" alt="Shyam Saefurrochman" 
-           class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
-      <h1 class="text-3xl font-bold mt-4">Hi there 👋, I'm Shyam Saefurrochman</h1>
-      <p class="mt-2 text-lg">Fresh Graduate in Internet Engineering and Technology | UGM</p>
-      <a href="assets/cv_shyam.pdf" target="_blank" 
-         class="mt-4 inline-block px-6 py-2 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100">
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-16 text-center">
+    <div class="max-w-4xl mx-auto">
+      <img src="assets/profile.jpg" alt="Profile"
+        class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-lg border-4 border-white" />
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">
+        Hi there 👋, I'm Shyam Saefurrochman
+      </h1>
+      <p class="text-lg opacity-90">
+        Fresh Graduate in Internet Engineering and Technology | UGM
+      </p>
+
+      <a href="assets/cv_shyam.pdf" download
+        class="mt-6 inline-block bg-white text-indigo-600 font-medium px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
         📄 Download CV
       </a>
     </div>
-  </header>
-
-  <!-- About -->
-  <section class="container mx-auto px-6 py-12 text-center">
-    <p class="text-lg max-w-2xl mx-auto">
-      🎓 Fresh Graduate passionate about <strong>Big Data, Artificial Intelligence, Cloud Computing, and Networking</strong>.  
-      🚀 Experienced in software development, IT support, and project coordination.  
-      🌱 Currently exploring deep learning for forecasting and cloud-based AI deployment.
-    </p>
   </section>
 
-  <!-- Tech Stack -->
-  <section class="bg-white py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-8">🛠️ Tech Stack</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-        <div class="p-4 bg-gray-100 rounded-lg">Python</div>
-        <div class="p-4 bg-gray-100 rounded-lg">Java</div>
-        <div class="p-4 bg-gray-100 rounded-lg">JavaScript</div>
-        <div class="p-4 bg-gray-100 rounded-lg">SQL</div>
-        <div class="p-4 bg-gray-100 rounded-lg">Flask</div>
-        <div class="p-4 bg-gray-100 rounded-lg">React</div>
-        <div class="p-4 bg-gray-100 rounded-lg">TensorFlow</div>
-        <div class="p-4 bg-gray-100 rounded-lg">PyTorch</div>
-        <div class="p-4 bg-gray-100 rounded-lg">YOLO</div>
-        <div class="p-4 bg-gray-100 rounded-lg">Git</div>
-        <div class="p-4 bg-gray-100 rounded-lg">AWS</div>
-        <div class="p-4 bg-gray-100 rounded-lg">Google Cloud Run</div>
+  <!-- About Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-lg text-gray-700 leading-relaxed">
+        🎓 Fresh Graduate passionate about 
+        <span class="font-semibold text-indigo-600">Big Data, Artificial Intelligence, Cloud Computing, and Networking.</span> 
+        🚀 Experienced in software development, IT support, and project coordination. 
+        🌱 Currently exploring deep learning for forecasting and cloud-based AI deployment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-8">🛠️ Tech Stack</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">Python</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">Java</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">JavaScript</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">SQL</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">Flask</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">React</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">TensorFlow</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">PyTorch</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">YOLO</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">Git</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">AWS</div>
+        <div class="bg-gray-100 rounded-lg py-3 shadow hover:shadow-md">Google Cloud Run</div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="bg-gray-50 py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center mb-8">📌 Featured Projects</h2>
-      <div class="grid gap-6 md:grid-cols-2">
+  <!-- Featured Projects -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-10">📌 Featured Projects</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">📊 IHK Forecasting App</h3>
-          <p>Flask-based application to forecast IHK using deep learning (LSTM).</p>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">📊 IHK Forecasting App</h3>
+          <p class="text-sm text-gray-600">Flask-based application to forecast IHK using deep learning (LSTM).</p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">🤖 Traffic Sign Detection</h3>
+          <p class="text-sm text-gray-600">Object detection model using YOLO for smart transportation.</p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">👤 Face Recognition Attendance</h3>
+          <p class="text-sm text-gray-600">Integrated AWS Rekognition with React UI for automated attendance.</p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">🤖 Traffic Sign Detection</h3>
-          <p>Object detection model using YOLO for smart transportation.</p>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">🍎 Fruit Detection Model</h3>
+          <p class="text-sm text-gray-600">Custom-trained YOLOv8 model for agriculture.</p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">👤 Face Recognition Attendance System</h3>
-          <p>Integrated AWS Rekognition with React UI for automated attendance.</p>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">📧 Email Blasting App</h3>
+          <p class="text-sm text-gray-600">Automated email blasting system with personalized templates.</p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">🍎 Fruit Detection Model</h3>
-          <p>Custom-trained YOLOv8 model for agriculture.</p>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">📥 Zoom Downloader</h3>
+          <p class="text-sm text-gray-600">App for downloading and managing Zoom recordings efficiently.</p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">📧 Email Blasting System</h3>
-          <p>Automated email campaign app with tracking and analytics.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">🎥 Zoom Downloader</h3>
-          <p>Tool to download and archive recorded Zoom meetings efficiently.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">🏢 HRIS App</h3>
-          <p>Human Resource Information System for employee management.</p>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 text-left">
+          <h3 class="text-lg font-semibold mb-2">💼 HRIS App</h3>
+          <p class="text-sm text-gray-600">Human Resource Information System with leave, payroll, and attendance modules.</p>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 text-center">
+    <h2 class="text-2xl font-bold mb-6">📫 Contact Me</h2>
+    <p class="text-gray-600 mb-6">Interested in collaboration or just want to say hi? Reach me via:</p>
+    <div class="space-x-4">
+      <a href="mailto:saefurrochman1@gmail.com" class="text-indigo-600 font-medium hover:underline">📧 Email</a>
+      <a href="https://github.com/shyamsaefurrochman" class="text-indigo-600 font-medium hover:underline">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/shyamsaefurrochman" class="text-indigo-600 font-medium hover:underline">💼 LinkedIn</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-indigo-600 text-white py-6 mt-12">
-    <div class="container mx-auto text-center">
-      <p>© 2025 Shyam Saefurrochman | Made with ❤️ using Tailwind CSS</p>
-      <div class="flex justify-center space-x-4 mt-3">
-        <a href="mailto:saefurrochman1@gmail.com" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/shyamsaefurrochman" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/shyam-saefurrochman" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    © 2025 Shyam Saefurrochman. All rights reserved.
   </footer>
 
 </body>

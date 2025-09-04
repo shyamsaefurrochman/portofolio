@@ -3,96 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shyam Saefurrochman - Portfolio</title>
+  <title>Shyam Saefurrochman | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #4f46e5;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #4f46e5;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 0.8rem;
-    }
-    a {
-      color: #4f46e5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      background: #eee;
-    }
+    body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <header>
-    <h1>Hi there 👋, I'm Shyam Saefurrochman</h1>
-    <p>Fresh Graduate in Internet Engineering and Technology | Universitas Gadjah Mada</p>
+  <!-- Header -->
+  <header class="bg-indigo-600 text-white py-10">
+    <div class="container mx-auto text-center">
+      <img src="assets/profile.jpg" alt="Shyam Saefurrochman" 
+           class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
+      <h1 class="text-3xl font-bold mt-4">Hi there 👋, I'm Shyam Saefurrochman</h1>
+      <p class="mt-2 text-lg">Fresh Graduate in Internet Engineering and Technology | UGM</p>
+      <a href="assets/cv_shyam.pdf" target="_blank" 
+         class="mt-4 inline-block px-6 py-2 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100">
+        📄 Download CV
+      </a>
+    </div>
   </header>
 
-  <section>
-    <p>🎓 Fresh Graduate in <b>Internet Engineering and Technology</b> from Universitas Gadjah Mada.<br>
-    💻 Passionate about <b>Big Data, Artificial Intelligence, Cloud Computing, and Networking</b>.<br>
-    🚀 Experienced in <b>software development, IT support, and project coordination</b>.<br>
-    🌱 Currently exploring <b>deep learning for forecasting and cloud-based AI deployment</b>.</p>
+  <!-- About -->
+  <section class="container mx-auto px-6 py-12 text-center">
+    <p class="text-lg max-w-2xl mx-auto">
+      🎓 Fresh Graduate passionate about <strong>Big Data, Artificial Intelligence, Cloud Computing, and Networking</strong>.  
+      🚀 Experienced in software development, IT support, and project coordination.  
+      🌱 Currently exploring deep learning for forecasting and cloud-based AI deployment.
+    </p>
   </section>
 
-  <section>
-    <h2>🛠️ Tech Stack</h2>
-    <ul>
-      <li><b>Languages:</b> Python, Java, JavaScript, SQL</li>
-      <li><b>Frameworks & Tools:</b> Flask, React, TensorFlow, PyTorch, YOLO, Git</li>
-      <li><b>Cloud Services:</b> AWS (S3, Rekognition, Lambda, DynamoDB, API Gateway), Google Cloud Run</li>
-      <li><b>Databases:</b> MySQL, PostgreSQL, DynamoDB</li>
-    </ul>
+  <!-- Tech Stack -->
+  <section class="bg-white py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-8">🛠️ Tech Stack</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-gray-100 rounded-lg">Python</div>
+        <div class="p-4 bg-gray-100 rounded-lg">Java</div>
+        <div class="p-4 bg-gray-100 rounded-lg">JavaScript</div>
+        <div class="p-4 bg-gray-100 rounded-lg">SQL</div>
+        <div class="p-4 bg-gray-100 rounded-lg">Flask</div>
+        <div class="p-4 bg-gray-100 rounded-lg">React</div>
+        <div class="p-4 bg-gray-100 rounded-lg">TensorFlow</div>
+        <div class="p-4 bg-gray-100 rounded-lg">PyTorch</div>
+        <div class="p-4 bg-gray-100 rounded-lg">YOLO</div>
+        <div class="p-4 bg-gray-100 rounded-lg">Git</div>
+        <div class="p-4 bg-gray-100 rounded-lg">AWS</div>
+        <div class="p-4 bg-gray-100 rounded-lg">Google Cloud Run</div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>📌 Featured Projects</h2>
-    <ul>
-      <li>📊 <a href="#">IHK Forecasting App</a> – Flask-based application to forecast IHK using deep learning (LSTM).</li>
-      <li>🤖 <a href="#">Traffic Sign Detection</a> – Object detection model using YOLO for smart transportation.</li>
-      <li>👤 <a href="#">Face Recognition Attendance System</a> – Integrated AWS Rekognition with React UI for automated attendance.</li>
-      <li>🍎 <a href="#">Fruit Detection Model</a> – Custom-trained YOLOv8 model for agriculture.</li>
-    </ul>
+  <!-- Projects -->
+  <section class="bg-gray-50 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-8">📌 Featured Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">📊 IHK Forecasting App</h3>
+          <p>Flask-based application to forecast IHK using deep learning (LSTM).</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🤖 Traffic Sign Detection</h3>
+          <p>Object detection model using YOLO for smart transportation.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">👤 Face Recognition Attendance System</h3>
+          <p>Integrated AWS Rekognition with React UI for automated attendance.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🍎 Fruit Detection Model</h3>
+          <p>Custom-trained YOLOv8 model for agriculture.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">📧 Email Blasting System</h3>
+          <p>Automated email campaign app with tracking and analytics.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🎥 Zoom Downloader</h3>
+          <p>Tool to download and archive recorded Zoom meetings efficiently.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🏢 HRIS App</h3>
+          <p>Human Resource Information System for employee management.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Shyam Saefurrochman</p>
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Shyam Saefurrochman | Made with ❤️ using Tailwind CSS</p>
+      <div class="flex justify-center space-x-4 mt-3">
+        <a href="mailto:saefurrochman1@gmail.com" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/shyamsaefurrochman" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/shyam-saefurrochman" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
 
 </body>
